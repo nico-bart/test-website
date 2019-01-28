@@ -5,24 +5,26 @@ body {
   color: #EEEEFF;
 }
 
-div.top {
-  align-self: center;
-  align-content: center;
-  align-items: center;
+div.topgrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+div.topgriditem {
   text-align: center;
-  color: #EEEEFF
-  font-size: 20px;
+  color: #AAAAFF;
+  font-size: 30px;
 }
 div.story {
   max-width: 600px;
 	margin: auto;
   align-self: center;
   text-align: left;
-  text-indent: 1%;
-  color: #EEEEFF
+  color: #EAEAFF
   font-size: 20px;
 }
-a.WORB {
-  color: #CCCCFF;
+strong.WORB {
+  color: #FAFAFF;
   font-size: 20px;
 }
