@@ -1,4 +1,9 @@
 body {
+  text-align: center;
+	align-items: center;
   background-color: #000000;
   color: #FFFFFF;
+}
+div.story {
+  color: #CCCCFF
 }
