@@ -14,11 +14,11 @@ div.top {
   font-size: 20px;
 }
 div.story {
-  max-width: 700px;
+  max-width: 600px;
 	margin: auto;
   align-self: center;
   text-align: left;
-  text-indent: 5%;
+  text-indent: 1%;
   color: #EEEEFF
   font-size: 20px;
 }
