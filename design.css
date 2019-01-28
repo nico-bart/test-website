@@ -10,13 +10,20 @@ div.top {
   align-content: center;
   align-items: center;
   text-align: center;
+  color: #EEEEFF
+  font-size: 20px;
 }
 div.story {
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  text-indent: 5%;
   color: #EEEEFF
-  font-size: 20;
+  font-size: 20px;
 }
-h6.WORB {
+a.WORB {
   color: #CCCCFF;
-  font-size: 20;
+  font-size: 20px;
   font-style: oblique;
 }
