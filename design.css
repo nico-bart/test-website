@@ -6,10 +6,12 @@ body {
 }
 
 div.topgrid {
+  align-content: center;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 20% 20% 20% 20% 20% 20%;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
+  width: 60%;
 }
 div.topgriditem {
   text-align: center;
