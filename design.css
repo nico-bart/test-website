@@ -2,11 +2,14 @@ body {
   text-align: center;
 	align-items: center;
   background-color: #000000;
-  color: #EEEEFF;
+  color: #AADDFF;
+}
+.social {
+  color: #00CFFF;
 }
 /* TODO: somehow get this into the center of the page */
 .theband {
-  color: #00CCFF;
+  color: #00CFFF;
   font-size: 18;
   font-weight: bold;
   text-align:center;
@@ -14,21 +17,16 @@ body {
   margin-right:auto;
   width: 600px;
 }
-div.topgriditem {
-  text-align: center;
-  color: #AAAAFF;
-  font-size: 30px;
-}
 div.story {
   max-width: 600px;
 	margin: auto;
   align-self: center;
   text-align: left;
-  color: #EAEAFF
+  color: #EAEAFF;
   font-size: 20px;
 }
 strong.WORB {
-  color: #00CCFF;
+  color: #00CFFF;
   /*font-size: 18px;*/
 }
 #player {
