@@ -31,3 +31,10 @@ strong.WORB {
   color: #00CCFF;
   /*font-size: 18px;*/
 }
+.player {
+  align: center;
+  margin-left:auto;
+  margin-right:auto;
+  width: 600px;
+  height: 150px;
+}
