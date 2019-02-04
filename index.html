@@ -25,21 +25,43 @@
 </a>
 </div>
 
-<div class=topgrid>
-  <div class=topgriditem></div>
-  <div class=topgriditem>Michael Hochmuth</div>
-  <div class=topgriditem>Felix Schrade</div>
-  <div class=topgriditem>Nico Scholz</div>
-  <div class=topgriditem>?</div>
-  <div class=topgriditem></div>
+<table class="theband"> <tr> <td>
+<table class="theband">
+  <colgroup>
+    <col span="1" style="width: 25%">
+    <col span="1" style="width: 25%">
+    <col span="1" style="width: 25%">
+    <col span="1" style="width: 25%">
+  </colgroup>
+  <tr>
+    <td>Michi</td>
+    <td>Felix</td>
+    <td>Nico</td>
+    <td>?</td>
+  </tr>
+  <tr>
+    <td>Keys</td>
+    <td>Sax</td>
+    <td>Bass</td>
+    <td>Drums</td>
+  </tr>
+</table>
+</tr> </td> </table>
 
-  <div class=topgriditem></div>
-  <div class=topgriditem>Keys</div>
-  <div class=topgriditem>Sax</div>
-  <div class=topgriditem>Bass</div>
-  <div class=topgriditem>Drums</div>
-  <div class=topgriditem></div>
-</div>
+<!-- TODO: work out a CSS table / design without the use of html table
+<section style="display: table;">
+  <header style="display: table-row;">
+    <div style="display: table-cell;">a s  df</div>
+    <div style="display: table-cell;">1  23</div>
+    <div style="display: table-cell;">as    d</div>
+  </header>
+  <div style="display: table-row;">
+    <div style="display: table-cell;">asd</div>
+    <div style="display: table-cell;">1234</div>
+    <div style="display: table-cell;">asd</div>
+  </div>
+</section>
+
 <!--
 <div class="social">
 		<a class="social" title="facebook" href="https://www.facebook.com/GrooveControlOfficial"><img src="Groove%20Control_files/s_fb.png"></a>
@@ -69,8 +91,37 @@
     schlichte Schönheit und einen unstillbaren Beat.
   </p>
 </div>
-<div class="soundcloudplayer">
-  <iframe width="600" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471750045&color=%0055AAaa&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+<!-- <div class="soundcloudplayer">
+  <iframe width="600" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471750045&color=00ccff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 </div>
+-->
+
+<!-- include costum soundcloud player -->
+<div id="player"> </div>
+<script>
+    (function() {
+        var script = document.createElement("script");
+
+        script.type = "text/javascript";
+        script.async = true;
+        script.src = "//sd.toneden.io/production/toneden.loader.js";
+
+        var entry = document.getElementsByTagName("script")[0];
+        entry.parentNode.insertBefore(script, entry);
+    }());
+
+    ToneDenReady = window.ToneDenReady || [];
+    ToneDenReady.push(function() {
+        // Modify the dom and urls parameters to position
+        // your player and select tracks/sets/artists to play.
+        ToneDen.player.create({
+            dom: "#player",
+            urls: [
+                "https://soundcloud.com/giraffage"
+            ]
+        });
+    });
+</script>
+
 </body>
 </html>
